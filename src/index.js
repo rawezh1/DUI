@@ -2,6 +2,7 @@ import './style.css';
 import { dropdown } from './dropdown';
 import menuImg from './menu.png';
 import { mobMenu } from './mobile';
+import { slide } from './slide';
 
 window.onload = function load() {
   const menu = document.getElementsByClassName('dropMenu')[0];
@@ -9,4 +10,5 @@ window.onload = function load() {
   mobileMenu.getElementsByTagName('img')[0].src = menuImg;
   dropdown(menu);
   mobMenu(mobileMenu);
+  slide();
 };
